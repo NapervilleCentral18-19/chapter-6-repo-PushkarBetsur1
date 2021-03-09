@@ -4,8 +4,25 @@ public class ContainsDuplicates
    {
       // Assume no dupes.
       boolean dupes = false;
-
-
+      int previousnum = 0; 
+      
+      for (int i = 0; i < arr.length - 1; i++)
+      {
+        for (int a = 0; a <arr.length -1; a++)
+        {
+            if (arr[i] == arr[a] && i != a)
+            {
+                return dupes = true; 
+        
+            }
+         else 
+            dupes = false; 
+        }
+        
+            
+        }
+      
+        return dupes; 
    }
 
    public static void main(String[] args)

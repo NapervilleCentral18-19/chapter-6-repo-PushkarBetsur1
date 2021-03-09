@@ -4,9 +4,28 @@ public class AdjacentDupes
    {
       // Assume no adjacent dupes.
       boolean adjDupes = false;
-
+      int previousvar = 0;
+      for(int s: arr){
+          if(s == previousvar){
+              return adjDupes = true;
+            
+            
+            }
+          else{
+            adjDupes = false;
+            
+            }
+          previousvar = s;
+          
+        
+        
+        
+        }
+      return adjDupes;
       // Loop through array, checking for duplicates
       // next to each other.
+      
+       
 
    }
 

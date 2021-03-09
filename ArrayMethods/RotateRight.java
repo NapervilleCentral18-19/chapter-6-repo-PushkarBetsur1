@@ -2,10 +2,17 @@ import java.util.Random;
 
 public class RotateRight
 {
-	//[1,4,2,5,8,7] rotatesRight to --> [7,1,4,2,5,8]
+    //[1,4,2,5,8,7] rotatesRight to --> [7,1,4,2,5,8]
    public void rotateRight(int[] arr)
    {
-
+       int nextnumber;
+       int last = arr[arr.length - 1];
+       for(int i = 1; i < arr.length - 1; i++)
+       {
+           nextnumber = arr[i + 1];
+           arr[i + 1] = arr[i];
+       }
+       arr[0] = last;
    }
 
    public static void main(String[] args)

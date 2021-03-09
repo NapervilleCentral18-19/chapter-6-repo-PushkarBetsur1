@@ -5,13 +5,29 @@ public class GetSecondLargest
    public int getSecondLargest(int[] arr)
    {
       // One way to do it: Find maximum once.
+      int largestnum = 0; 
       int max = arr[0];
+       for (int s: arr)
+       {
+           if (s <= largestnum)
+           {
+               largestnum = largestnum; 
+            }
+           else if (s > largestnum)
+           {
+               largestnum = s; 
+               
+            }
+            
+           
+       }
+      
 
       // 2. Find the max again, ignoring the real max.
       int oldMax = max;
       max = arr[0];
 
-
+      return largestnum; 
    }
 
    public static void main(String[] args)

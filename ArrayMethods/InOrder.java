@@ -4,6 +4,12 @@ public class InOrder
    {
       // Assume they are in order.
       boolean ordered = true;
+      for (int i = 0; i <arr.length - 1; i++)
+      {
+        if (arr[i])
+        
+        }
+      
 
    }
 
