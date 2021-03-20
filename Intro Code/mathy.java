@@ -18,7 +18,8 @@ public class mathy
     }
 
     public mathy(int [][] array)
-    {
+    {   // aliases
+        // array is an object - passed by reference. 
         square = array;
 
     }
@@ -149,31 +150,30 @@ public class mathy
 
     public static int sum2DArray(int [][] scores)
     {
-
+        int total = 0; 
 
 
         for ( int row=0; row < scores.length; row++)
         {
             for ( int col=0; col < scores[row].length; col++)
 
-                System.out.print (scores[row][col] + "\t");
-
-            System.out.println();
+                total += scores[row][col];
         }
 
 
-        return 0;
+        return total;
 
     }
 
-
+    
 
     public int sumOneRow2DArray(int row)
-    {   int total = 0;
-
-
-
-
+    {   int total = 0; 
+        row = row -1; 
+        for (int col = 0 ; col < square[row].length;col++)
+         {
+                total += square [row] [col]; 
+         }   
         return total;
 
     }

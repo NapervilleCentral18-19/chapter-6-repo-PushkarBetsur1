@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=MagicSquare
+comment0.text=\r\n\ Pushkar\ Betsur\r\n\ 3/16/21\r\n\ APCS\ 8th\ Period\r\n
+comment1.params=array
+comment1.target=MagicSquare(int[][])
+comment2.params=
+comment2.target=boolean\ isMagic()
+comment3.params=
+comment3.target=int\ getMagicNum()
+comment4.params=array
+comment4.target=void\ setMagicSquare(int[][])
+numComments=5

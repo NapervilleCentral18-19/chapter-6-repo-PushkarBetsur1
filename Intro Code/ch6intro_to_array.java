@@ -36,8 +36,8 @@ public static void main (String[] args)
  * s = values [0], s = values [1] .... [n] - s = x
  * advantage: will not give you an out of bounds error
  * limitations: can not change the int value in the array values
- */
-  for (int s: values)
+ /**/
+  /*for (int s: values)
   {
     System.out.println(s); // NOT number[s]
     s=0; 
@@ -83,12 +83,16 @@ public static void main (String[] args)
 
 
 
- /*
+ /**
+ 
        //make a two dementional array
-       int [][] table = new int [5][10];
-
+       //  r   c 
+       int [] [] table = new int [5][10];
+       
        // Load the table with values
+       // row major & .length - how many rows  
        for (int row=0; row < table.length; row++)
+       // [r].length is how many columns 
           for (int col=0; col < table[row].length; col++)
              table[row][col] = row * 10 + col;
 
@@ -104,7 +108,8 @@ public static void main (String[] args)
 
     // make a 2d array with an iniitalizer list.
     //print the length of row and col
-/*
+/**/
+
     int [][] scores = { {1,2,3},//6
                         {2,2,3},//7
                         {3,2,3},//8
@@ -114,13 +119,16 @@ public static void main (String[] args)
     System.out.println(scores[0].length+"col");
     //how many rows
     System.out.println(scores.length+"row");
-
+    
+    
+   
     //sum entire 2D array
-    System.out.print("The sum of this array is" );
+    int sum = useful.sum2DArray(scores); 
+    System.out.print("The sum of this array is"+ sum);
 
     //sum a row of 2D array
-    System.out.print("The sum of row "));
-
+    System.out.print("The sum of row ");
+    int rsum = useful.sumOneRow2DArray();  
 
 
 

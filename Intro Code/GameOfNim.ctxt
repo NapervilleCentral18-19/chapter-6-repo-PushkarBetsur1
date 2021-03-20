@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=GameOfNim
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ GameOfNim\ here.\r\n\r\n\ @authors\ (Adam\ Q\ and\ Pushkar\ B)\r\n\ @version\ (3/10/2021)\r\n
+comment1.params=stones
+comment1.target=void\ displayNim(int[])
+comment2.params=
+comment2.target=void\ main()
+numComments=3
